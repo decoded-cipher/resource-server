@@ -52,3 +52,8 @@ The project aims at building an offline file-server for the effective sharing an
 - [ ] **Download File**
   - List down the resources along with DOWNLOAD button to download the file
 
+****
+
+### Contributors
+1. [Arjun Krishna](https://github.com/decoded-cipher)
+2. 
