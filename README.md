@@ -27,7 +27,7 @@ The project aims at building an offline file-server for the effective sharing an
   - Searchbar with SEARCH button
 - [ ] **Upload File Page**
   - Name (Autofill)
-  - Drag 'n' Drop Area or CLICK HERE TO UPLOAD link/button
+  - Drag 'n' Drop Area and CLICK HERE TO UPLOAD link within it
   - Description for the File
   - UPLOAD button
 - [ ] **Download File -** A List with each item having (if):
