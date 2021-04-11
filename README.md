@@ -38,7 +38,7 @@ The project aims at building an offline file-server for the effective sharing an
   - Size of the File
   - DOWNLOAD button
 
-- **Note:**
+**Note:**
   - Using Illustrations (Instead of Images) as backgrounds is appreciated
 
 ### **Backend**
