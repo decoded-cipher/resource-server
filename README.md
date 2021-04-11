@@ -1,15 +1,15 @@
 # Resource Server
-The project aims at building an offline file-server for the effective sharing and access of learning resources among the fellows of Inovus Labs. 
+The project aims at building a file-server for the effective sharing and access of learning resources among the fellows of Inovus Labs. Currently, its planned to be hosted locally (May change in the future)
 
 ### **Technology Stack**
 
-- **Frontend :** Handlebars Templete Engine
+- **Frontend :** HTML, CSS, JavaScript, Bootstrap (Handlebars)
 - **Backend :** Node.js
 - **Database :** MySQL
 
 ****
 
-### **How to contribute to the Project (Guidelines)**
+## **How to contribute to the Project (Guidelines)**
 
 - [ ] Fork the Repository to your account
 - [ ] Clone it to Local Machine
