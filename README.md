@@ -23,14 +23,14 @@ The project aims at building an offline file-server for the effective sharing an
 
 ### **Frontend**
 
-- [ ] **Home Page -** Minimum Requirements for the page :
+- [ ] **Home Page**
+  - Searchbar with SEARCH button
+- [ ] **Upload File Page**
   - Name (Autofill)
-- [ ] **Upload File Page -** Minimum Requirements for the page :
-  - Name (Autofill)
-  - Drag 'n' Drop Area or CLICK HERE TO UPLOAD link
-  - Description of the File
+  - Drag 'n' Drop Area or CLICK HERE TO UPLOAD link/button
+  - Description for the File
   - UPLOAD button
-- [ ] **Download File -** Minimum details to be displayed :
+- [ ] **Download File -** A List with each item having (if):
   - Thumbnail or Preview (Not necessary)
   - Name of the File
   - Description of the File
@@ -39,22 +39,16 @@ The project aims at building an offline file-server for the effective sharing an
   - DOWNLOAD button
 
 **Note:**
-
-- [ ] Autocomplete feature for the Searchbar is very much essential
-- [ ] Drag 'n' Drop option for effective File Upload is more preferable
-- [ ] Using Illustrations (Instead of Images) as backgrounds is appreciated
+  - Using Illustrations (Instead of Images) as backgrounds is appreciated
 
 ### **Backend**
 
-**Home Page** 
-- [ ] Searchbar must assist with autocomplete feature
-- [ ] Searches for filenames in the SQL database
-
-**Upload File Page**
-- [ ] Drag 'n' Drop feature
-- [ ] Upload files of any sizes (Various types)
-- [ ] Rename the file as that of the name provided (By default, current file name becomes the index for search)
-
-**Upload File Page**
-- [ ] List down the resources along with DOWNLOAD button to download the file
+- [ ] **Home Page** 
+  - Searchbar must assist with autocomplete feature
+  - Searches for filenames in the SQL database
+- [ ] **Upload File Page**
+  - Drag 'n' Drop feature (By default, autofill the name field)
+  - Upload files of any sizes (Various types)
+- [ ] **Download File**
+  - List down the resources along with DOWNLOAD button to download the file
 
