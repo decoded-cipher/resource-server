@@ -25,13 +25,11 @@ The project aims at building an offline file-server for the effective sharing an
 
 - [ ] **Home Page**
   - Searchbar with SEARCH button
-  
 - [ ] **Upload File Page**
   - Name (Autofill)
   - Drag 'n' Drop Area and CLICK HERE TO UPLOAD link within it
   - Description for the File
   - UPLOAD button
-
 - [ ] **Download File -** A List with each item having (if):
   - Thumbnail or Preview (Not necessary)
   - Name of the File
@@ -48,11 +46,9 @@ The project aims at building an offline file-server for the effective sharing an
 - [ ] **Home Page** 
   - Searchbar must assist with autocomplete feature
   - Searches for filenames in the SQL database
-
 - [ ] **Upload File Page**
   - Drag 'n' Drop feature (By default, autofill the name field)
   - Upload files of any sizes (Various types)
-
 - [ ] **Download File**
   - List down the resources along with DOWNLOAD button to download the file
 
