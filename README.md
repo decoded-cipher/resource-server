@@ -1,5 +1,6 @@
 # Resource Server
-The project aims at building a file-server for the effective sharing and access of learning resources among the fellows of Inovus Labs. Currently, its planned to be hosted locally (May change in the future)
+The project aims at building a file-server for the effective sharing and access of learning resources among the fellows of Inovus Labs.
+Currently, its planned to be hosted locally (May change in the future)
 
 ### **Technology Stack**
 
