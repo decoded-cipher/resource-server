@@ -1,0 +1,26 @@
+{
+  "name": "resource-server",
+  "version": "1.0.0",
+  "description": "The project aims at building a file-server for the effective sharing and access of learning resources among the fellows of Inovus Labs.\r Currently, its planned to be hosted locally (May change in the future)",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/decoded-cipher/resource-server.git"
+  },
+  "author": "Decoded_Cipher",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/decoded-cipher/resource-server/issues"
+  },
+  "homepage": "https://github.com/decoded-cipher/resource-server#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
