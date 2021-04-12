@@ -1,5 +1,5 @@
 .home {
-    background-image: url(/img/001.png);
+    background-image: url(/public/img/001.png);
     height: 100vh;
     display: flex;
     justify-content: center;
