@@ -24,7 +24,7 @@ Currently, its planned to be hosted locally (May change in the future)
 
 ### **Frontend**
 
-- [ ] **Home Page**
+- [x] **Home Page**
   - Searchbar with SEARCH button
 - [ ] **Upload File Page**
   - Name (Autofill)
