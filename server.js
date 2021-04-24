@@ -19,4 +19,8 @@ app.get('/', (req, res) => {
     res.render('home');
 });
 
+app.get('/upload', (req, res) => {
+    res.render('file-upload');
+});
+
 app.listen(3000);
