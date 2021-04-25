@@ -12,11 +12,11 @@ Currently, its planned to be hosted locally (May change in the future)
 
 ## **How to contribute to the Project (Guidelines)**
 
-- [ ] Fork the Repository to your account
-- [ ] Clone it to Local Machine
-- [ ] Start contributing to the project...
-- [ ] Commit and Push it to your remote Repository
-- [ ] Create a Pull Request towards this Main Repository
+- [x] Fork the Repository to your account
+- [x] Clone it to Local Machine
+- [x] Start contributing to the project...
+- [x] Commit and Push it to your remote Repository
+- [x] Create a Pull Request towards this Main Repository
 
 ****
 
