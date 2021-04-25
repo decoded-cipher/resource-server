@@ -44,6 +44,45 @@
     padding-right: 0px;
 }
 
+.dragNdrop {
+    border: 4px dashed rgba(255, 255, 255, 0.7);
+    width: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    /* min-height: 100px; */
+    height: 100%;
+    padding-top: 100px;
+    /* display: flex; */
+    text-align: center;
+    /* justify-content: center; */
+}
+
+.dragNdrop input[type="file"] {
+    width: 320px;
+    margin-top: 15px;
+}
+
+.dragged {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.title {
+    color: #271638;
+    padding: 15px;
+}
+
+.browse {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.upload button:hover {
+    background-color: #271638;
+}
+
+
+
+
+
 @media only screen and (max-width: 992px) {
     .col-lg-6 {
         padding-right: 10px;
@@ -58,36 +97,23 @@
     .hhh {
         margin-bottom: 20px;
     }
-    .icon img {
+
+    .icon img, .title {
         display: none;
     }
+
     .upload button {
         width: 100%;
         margin-top: 15px;
         background-color: #271638;
     }
-}
 
-.dragNdrop {
-    border: 4px dashed rgba(255, 255, 255, 0.7);
-    width: 100%;
-    background: rgba(255, 255, 255, 0.3);
-    min-height: 100px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    .dragNdrop {
+        width: 100%;
+        padding-top: 0px;
+    }
 
-.title {
-    color: #271638;
-    padding: 15px;
+    .dragNdrop input[type="file"] {
+        margin-top: 0px;
+    }
 }
-
-.browse {
-    text-decoration: underline;
-    cursor: pointer;
-}
- .upload button:hover {
-     background-color: #271638;
- }
