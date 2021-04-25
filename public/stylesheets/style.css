@@ -79,6 +79,19 @@
     background-color: #271638;
 }
 
+.check-img img{
+    height: 100px;
+    width: auto;
+}
+
+.links button {
+    margin: 10px;
+}
+
+.links a :hover {
+    background-color: #271638;
+}
+
 
 
 

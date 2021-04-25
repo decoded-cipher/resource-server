@@ -1,45 +1,47 @@
 <section class="home">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-6 hhh px-3">
-                <div class="dragNdrop">
-                    <div class="icon">
-                        <img src="/public/img/file-icon.png" alt="" draggable="false">
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <div class="row">
+                <div class="col-lg-6 hhh px-3">
+                    <div class="dragNdrop">
+                        <div class="icon">
+                            <img src="/public/img/file-icon.png" alt="" draggable="false">
+                        </div>
+                        <input type="file" name="file" id="fileInput">
+                        <div class="title">Drop your Files here or, <span class="browse">browse</span></div>
                     </div>
-                    <input type="file" id="fileInput">
-                    <div class="title">Drop your Files here or, <span class="browse">browse</span></div>
+                </div>
+                <div class="col-lg-6 upload">
+                    <input type="text" placeholder="Enter File name...">
+                    <textarea class="mt-4" name="" id="" rows="10" placeholder="Enter File Description..."></textarea>
+                    <button type="submit" value="Upload" class="btn btn-primary">Upload</button>
                 </div>
             </div>
-            <div class="col-lg-6 upload">
-                <input type="text" placeholder="Enter File name...">
-                <textarea class="mt-4" name="" id="" rows="10" placeholder="Enter File Description..."></textarea>
-                <button class="btn btn-primary">Upload</button>
-            </div>
-        </div>
+        </form>
     </div>
 </section>
 
 <script>
-    var dragNdrop = document.querySelector(".dragNdrop");
-    var fileInput = document.querySelector("#fileInput")
+    // var dragNdrop = document.querySelector(".dragNdrop");
+    // var fileInput = document.querySelector("#fileInput")
 
-    dragNdrop.addEventListener("dragover", (e) => {
-        // console.log('Dragging...');
-        e.preventDefault()
+    // dragNdrop.addEventListener("dragover", (e) => {
+    // console.log('Dragging...');
+    // e.preventDefault()
 
-        if (!dragNdrop.classList.contains("dragged")) {
-            dragNdrop.classList.add("dragged");
-        }
-    })
+    // if (!dragNdrop.classList.contains("dragged")) {
+    // dragNdrop.classList.add("dragged");
+    // }
+    // })
 
-    dragNdrop.addEventListener("dragleave", () => {
-        dragNdrop.classList.remove("dragged");
-    })
+    // dragNdrop.addEventListener("dragleave", () => {
+    // dragNdrop.classList.remove("dragged");
+    // })
 
-    dragNdrop.addEventListener("drop", (e) => {
-        e.preventDefault();
-        dragNdrop.classList.remove("dragged");
-        var files = e.dataTransfer.files
-        console.log(files);
-    })
+    // dragNdrop.addEventListener("drop", (e) => {
+    // e.preventDefault();
+    // dragNdrop.classList.remove("dragged");
+    // var files = e.dataTransfer.files
+    // console.log(files);
+    // })
 </script>
