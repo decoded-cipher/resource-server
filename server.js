@@ -32,6 +32,12 @@ app.post('/upload', (req, res) => {
         var file = req.files.file;
         // console.log(file.name);
 
+        if(req.body.fileName) {
+            var fileExt = file.name.split('.').pop();
+            // console.log(fileExt);
+            file.name = req.body.fileName + '.' + fileExt
+        }
+
         file.mv('./uploads/' + file.name, (err) => {
             // res.send('File Uploaded')
             res.render('upload-success');
