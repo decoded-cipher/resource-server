@@ -2,6 +2,7 @@ var express = require('express');
 var upload = require('express-fileupload');
 var path = require('path');
 var hbs = require('express-handlebars');
+var mysql = require('mysql');
 
 var app = express();
 app.use(upload());
@@ -16,6 +17,25 @@ app.engine('hbs', hbs({
 
 // app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(__dirname, + 'public'));
+
+
+// ------------------------------------------------------------------
+
+var pool = mysql.createPool({
+    host : 'localhost',
+    user : 'root',
+    password : '',
+    database : 'resource-server'
+})
+
+pool.getConnection((err, connection) => {
+    if(err) {
+        throw err;
+    } console.log('MySQL Database Connected');
+})
+
+// ------------------------------------------------------------------
+
 
 app.get('/', (req, res) => {
     res.render('home');
@@ -48,6 +68,10 @@ app.post('/upload', (req, res) => {
         uploadMsg = 'Oops! No files selected for uploading!';
         res.render('upload-result', {uploadMsg});
     }
+})
+
+app.get('/file-list', (req, res) => {
+    res.render('file-list');
 })
 
 app.listen(3000);
