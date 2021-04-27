@@ -26,6 +26,7 @@ app.get('/upload', (req, res) => {
 });
 
 app.post('/upload', (req, res) => {
+    var uploadMsg;
     if(req.files) {
         // console.log(req.files);
 
@@ -40,8 +41,12 @@ app.post('/upload', (req, res) => {
 
         file.mv('./uploads/' + file.name, (err) => {
             // res.send('File Uploaded')
-            res.render('upload-success');
+            uploadMsg = 'File Uploaded Successfully!';
+            res.render('upload-result', {uploadMsg});
         })
+    } else {
+        uploadMsg = 'Oops! No files selected for uploading!';
+        res.render('upload-result', {uploadMsg});
     }
 })
 
