@@ -1,0 +1,37 @@
+{{!-- <section class="home"> --}}
+<section style="background-image: none;" class="home">
+
+    <div class="container">
+
+
+        <table class="table" id="productTable">
+            <thead>
+                <tr>
+                    {{!-- <th style="width: 80px;" scope="col">SI No:</th> --}}
+                    <th style="width: 250px;" scope="col">File Name</th>
+                    <th style="width: 550px;" scope="col">Description</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">File Size</th>
+                    <th scope="col">Settings</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each result}}
+                <tr>
+                    {{!-- <td style="width: 80px;">01</td> --}}
+                    <td style="width: 250px;">{{res_name}}</td>
+                    <td style="width: 550px;">{{res_desc}}</td>
+                    <td>{{res_tags}}</td>
+                    <td>{{res_filesize}} MB</td>
+                    <td><a target="_blank" class="px-2 btn btn-primary" href="/uploads/{{res_file}}">View / Download</a>
+                    </td>
+                </tr>
+                {{/each}}
+
+            </tbody>
+        </table>
+
+
+
+    </div>
+</section>
