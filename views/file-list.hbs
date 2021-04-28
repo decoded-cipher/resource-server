@@ -1,41 +1,32 @@
-<section class="home">
+{{!-- <section class="home"> --}}
+<section style="background-image: none;" class="home">
+
     <div class="container">
 
 
         <table class="table" id="productTable">
             <thead>
                 <tr>
-                    <th style="width: 80px;" scope="col">SI No:</th>
+                    {{!-- <th style="width: 80px;" scope="col">SI No:</th> --}}
                     <th style="width: 250px;" scope="col">File Name</th>
-                    <th style="width: 500px;" scope="col">Description</th>
+                    <th style="width: 550px;" scope="col">Description</th>
                     <th scope="col">Category</th>
                     <th scope="col">File Size</th>
-                    <th scope="col">Download</th>
+                    <th scope="col">Settings</th>
                 </tr>
             </thead>
             <tbody>
-                {{!-- {{#each products}} --}}
+                {{#each result}}
                 <tr>
-                    <td>01</td>
-                    <td>Sample File 001</td>
-                    <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
-                    <td>Information Theory</td>
-                    <td>125 MB</td>
-                    <td><a class="mx-2 btn btn-primary" href="">Download</a></td>
-                </tr>
-                <tr>
-                    <td style="width: 50px;" class="count">01</td>
-                    <td>Sample File 002</td>
-                    <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    </td>
-                    <td>Cyber Security</td>
-                    <td>125 MB</td>
-                    <td style="width: 150px;">
-                        <a class="mx-2 btn btn-primary" href="">Download</a>
+                    {{!-- <td style="width: 80px;">01</td> --}}
+                    <td style="width: 250px;">{{res_name}}</td>
+                    <td style="width: 550px;">{{res_desc}}</td>
+                    <td>{{res_tags}}</td>
+                    <td>{{res_filesize}} MB</td>
+                    <td><a target="_blank" class="px-2 btn btn-primary" href="/uploads/{{res_file}}">View / Download</a>
                     </td>
                 </tr>
-                {{!-- {{/each}} --}}
+                {{/each}}
 
             </tbody>
         </table>
