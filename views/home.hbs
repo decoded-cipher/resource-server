@@ -1,13 +1,63 @@
 <section class="home">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-2"></div>
-                <div class="col-lg-6">
-                    <input type="text" placeholder="Type to Search...">
-                </div>
-                <div class="col-lg-2 search">
-                    <button type="submit">Search</button>
-                </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-6 ui-widget">
+                <input type="text" id="searchText" placeholder="Type to Search...">
+            </div>
+            <div class="col-lg-2 search">
+                <button type="submit">Search</button>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script>
+    var availableTags = [
+        "ActionScript",
+        "AppleScript",
+        "Asp",
+        "BASIC",
+        "C",
+        "C++",
+        "Clojure",
+        "COBOL",
+        "ColdFusion",
+        "Erlang",
+        "Fortran",
+        "Groovy",
+        "Haskell",
+        "Java",
+        "JavaScript",
+        "Lisp",
+        "Perl",
+        "PHP",
+        "Python",
+        "Ruby",
+        "Scala",
+        "Scheme"
+    ];
+    $('#searchText').autocomplete({
+        source: availableTags
+    }, {});
+    
+</script>
+
+<style>
+    .ui-widget {
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .ui-widget-content {
+        background: rgba(255, 255, 255, 0.7);
+    }
+
+    .ui-menu-item :hover {
+        background: #271638;
+    }
+
+</style>
